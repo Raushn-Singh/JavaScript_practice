@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  Event bubbling-->
+  <div id="parent--div">
+    <button id="child--div">Button</button>
+    </div>
+
+    event delegation-->parent element par event lga rahe hai aur child ko bhi manage karte hai
+    <div id="parent-div">
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+    </div>
+<script>
+  const parentDiv=document.getElementById('parent--div');
+  const childDiv=document.getElementById('child--div');
+  parentDiv.addEventListener('click',function(){
+    console.log('Parent Div Clicked');
+  })
+
+  childDiv.addEventListener('click',function(){
+    console.log('Child Div Clicked');
+  })
+
+  const parent=document.getElementById('parent-div');
+   parent.addEventListener('click',function(event){
+   if( event.target.tagName=='LI'){
+    console.log('LI item clicked',event.target.textContent);
+   }
+   })
+</script>
+</body>
+</html>

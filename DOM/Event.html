@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Add Event Listener -->
+  <button id="btn" >btn<button/>
+    <!-- //inline event -->
+     <button onclick="myFunction()">btn</button>
+
+     <!-- HTML DOM property -->
+     <button id="btn1">Click Me </button>
+  <script>
+    const button=document.getElementById('btn')
+    button.addEventListener('click',function(){
+      alert('button clicked')
+    })
+
+    function myFunction(){
+      alert("Event Onclick triggered")
+    }
+
+    document.getElementById('btn1').onclick=function(){
+      alert('button DOM PROPERTY clicked')
+    }
+  </script>
+</body>
+</html>

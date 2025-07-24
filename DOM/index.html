@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <p id="content">Old Text</p>
+  <img id="logo" src="https:picsum.photos/200/300" alt="img"/> -->
+  <!-- <a id="link" href="https://www.google.com" target="_blank">Google</a> -->
+<!-- <h1 class="demo">Mohit Decodes</h1> -->
+
+<div id="container"></div>
+<button onclick="addButton()">Add Me</button>
+<button onclick="RemoveButton()">Remove Me</button>
+  <script>
+    console.log(document.body)
+    //document.getElementById("demo")
+    //document.getElementsByClassName("demo")
+    //document.getElementsByTagName("h1")
+    //document.querySelector("#demo");
+   // document.querySelectorAll(".demo");
+   //document.getElementById("content").innerHTML="<b>Hello World<b>";
+  // document.getElementById("content").innerText="Bold Text";
+  //document.getElementById("logo").src="https://picsum.photos/300/200";
+ // document.getElementById("link").href="https://www.bing.com";
+  //adding and removing element
+  
+   let count = 0;
+  function addButton() {
+    const box = document.createElement("div");
+    box.innerHTML = "New Box";
+    box.id = "box-" + count++;  // unique ID
+    document.getElementById("container").appendChild(box);
+  }
+
+   
+function RemoveButton(){
+  if(count>0)
+
+ {
+     count--;
+  const button=document.getElementById("box-"+count);
+ 
+  if(button){
+    button.remove()
+  
+  }
+}
+}
+  </script>
+</body>
+</html>
