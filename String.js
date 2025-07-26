@@ -60,6 +60,7 @@ console.log(str4.includes("l"))
 // slice()  vs subString()
 let str5="Mohit";
 console.log(str5.slice(0,3));
+
 console.log(str5.substring(0,3));
 
 //replace() method
@@ -77,6 +78,11 @@ console.log(str8.trim());
 //concat() method
 let str9="Mohit";
 console.log(str9.concat(" Kumar"))
+
+
+
+
+
 
 
 
