@@ -140,15 +140,107 @@
 // Spread  operator(...)
 
 // copy merge and pass array as an argument
-const array1=[1,2,3]
-const array2=[4,5,6]
-console.log([...array1,...array2])
+// const array1 = [1, 2, 3]
+// const array2 = [4, 5, 6]
+// console.log([...array1, ...array2])
 
 //destructuring array
-const array3=[1,3,4,2]
-const[a,b,c,d]=array3
-console.log(a)
+// const array3 = [1, 3, 4, 2]
+// const [a, b, c, d] = array3
+// console.log(a)
 
+
+
+
+let arr = [2, 4, 6, 8, 10]
+console.log(arr)
+console.log(arr[0])
+console.log(arr[1])
+console.log(arr[2])
+arr[4] = "Rahul"
+console.log(arr)
+
+
+//push --> Add at the end 
+arr.push(20)
+console.log(arr)
+//pop --> remove at the end and return it
+console.log(arr.pop())// array ki last value ko remove kar diya and usi valuw ko return kar diya
+
+//unshift--> Add to start
+arr.unshift(30)
+console.log(arr)
+//shift --> remove from start and return it
+arr.shift()
+console.log(arr)
+
+//indexOf
+
+console.log(arr.indexOf(8))
+
+//includes
+console.log(arr.includes(100))
+
+let even = [2, 4, 6, 8, 10]
+let odd = [1, 3, 5, 7, 9]
+let newArr = even.concat(odd)//concat is used to merge two arrays
+console.log(newArr)
+console.log(newArr.reverse())
+
+
+//slice -->
+let arr1 = [1, 2, 3, 4, 5]
+let arr2 = arr1.slice(1, 3)//slice is used to get a part
+console.log(arr2)
+
+let colors = ['red', 'blue', 'yellow', 'black']
+
+// console.log(colors.splice(0, 2))//splice is used to remove and add
+
+colors.splice(0, 2, "Voilet", "Magenta", "Cyan", "Golden")
+console.log(colors)
+
+//sort()
+console.log(colors.sort())
+
+let Arr1 = [1]
+let Arr2 = [1]
+
+console.log(Arr1 == Arr2)//false
+
+let newArr1 = Arr1
+console.log(newArr1 == Arr1)//true
+
+newArr1.push(10)
+console.log(newArr1)
+console.log(Arr1)
+
+const arr3 = [1, 2, 3, 4]
+
+arr3.push(100)
+console.log(arr3)
+
+let arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(arr4)
+
+console.log(arr4[0])
+console.log(arr4[1])
+console.log(arr4[2])
+console.log(arr4[3])
+console.log(arr4[4])
+
+
+for (let i = 0; i < arr4.length; i++) {
+  console.log(arr4[i])
+}
+
+
+//function -->it is block of code which can be called multiple times
+function greet(name) {
+  console.log(`Hello ${name}`)
+}
+
+greet("Rahul")
 
 
 
