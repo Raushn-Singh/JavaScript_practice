@@ -45,3 +45,29 @@ console.log(dog.eats); //true
 console.log(dog.barks); //true 
 
 
+
+//prime ,fibo,pallindrome,armstrong
+
+
+
+
+
+function orime(num) {
+  if (num == 1) {
+    return false
+  }
+
+  let n = num
+  let i = 2;
+  while (i <= n / 2) {
+    if (n % i == 0) {
+      return false
+    }
+    i++;
+  }
+  return true
+}
+
+console.log("Name")
+
+console.log(orime(2))

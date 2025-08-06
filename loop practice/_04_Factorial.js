@@ -1,3 +1,6 @@
+//Factorial Calculation: Write a program to calculate the factorial of a number using a for loop.
+
+
 let number = parseInt(prompt("Enter the Number"))
 
 let fact = 1;

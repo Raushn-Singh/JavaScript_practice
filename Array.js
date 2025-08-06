@@ -242,5 +242,31 @@ function greet(name) {
 
 greet("Rahul")
 
+function sayHello() {
+  console.log("Hello")
+}
+sayHello()
 
+let arr = [10, 30, 40, 50, 60]
+
+arr.push(60)
+arr.pop()
+arr.shift()
+arr.unshift(30)
+arr.indexOf(30)
+
+
+//block
+//lexical
+//function
+
+
+function outer() {
+  let x = 10
+  let y = 20
+  function inner() {
+    console.log(x)
+    console.log(y)
+  }
+}
 

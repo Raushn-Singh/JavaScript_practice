@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="result"></h1>
+  </body>
+
+  <script>
+    var h1Obj = document.getElementById("result");
+    console.log(h1Obj);
+    h1Obj.innerHTML = "msg is : ";
+    h1Obj.innerHTML += "hello world";
+    // setTimeout(() => {
+    // document.getElementById("result").innerHTML = "Hello world";
+    //}, 3000);
+  </script>
+</html>

@@ -1,3 +1,7 @@
+//Sum of Digits: Write a program that takes a positive integer as input and calculates the sum of its digits using a for loop.
+
+
+
 let number = parseInt(prompt("Enter the number"))
 
 let num = number
