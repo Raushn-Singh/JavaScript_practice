@@ -16,18 +16,52 @@
 
     <script>
       // variable : container to store data
-      var num; // declaration of variable
-      let num; //declaration of variable
+      //var num; // declaration of variable
+      //let num; //declaration of variable
 
-      const num = 10; // declaration of variable
-      num = 10; // intializtion or assignment
-      var num3 = 10;
+      //const num = 10; // declaration of variable
+      //num = 10; // intializtion or assignment
+      //var num3 = 10;
 
-      var meraVariable,
-        dibba1,
-        a,
-        c = 30,
-        result;
+      //var meraVariable,
+      //dibba1,
+      //a,
+      //c = 30,
+      //result;
+      // naming convention of identifiers
+      // 1. no special characters are allowed except _ $ and some currency symbols.
+      // 2. must not start with numeric eg var 9num
+      // 3. must not be reserved keyword
+      //var num;
+      //console.log(typeof num); // output : undefined
+
+      // strong typing supported languages eg c,c++,java
+      // int num;
+      //num=10;
+      // Dynamic Typing supported languages eg javascript,python
+
+      // var num5 = 20.67344;
+      //console.log(num5.toFixed(3));
+
+      //  num = null; // not assignrd not defined value
+      //console.log(typeof num); //object
+      //console.log("A" * 5); // not a number NAN
+
+      // non primitive data types
+
+      //Object  -> collection of data
+
+      //num = [];
+      //console.log(typeof num); //object
+      num = {};
+      console.log(typeof num); //object
+      num = new Date();
+      console.log(typeof num); //object
+
+      num = Symbol("aman");
+      console.log(num);
+      console.log(typeof num); //symbol
+      // primitive is wrapped into a object by js for performance optimization
     </script>
   </body>
 </html>

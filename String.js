@@ -37,46 +37,46 @@
 
 // String Methods
 //length-->
-let str="Mohit";
+let str = "Mohit";
 console.log(str.length);
 
 //toUpperCase // toLowerCase
-let str1="Mohit";
+let str1 = "Mohit";
 console.log(str1.toUpperCase());
 console.log(str1.toLowerCase());
 
 // charAt()
-let str2="Hello";
+let str2 = "Hello";
 console.log(str2.charAt(3));
 
 //indexOf()--> it return the index of character which is present in the string
-let str3="Hello";
+let str3 = "Hello";
 console.log(str3.indexOf("h"))
 
 //includes()-->
-let str4="Hello";
+let str4 = "Hello";
 console.log(str4.includes("l"))
 
 // slice()  vs subString()
-let str5="Mohit";
-console.log(str5.slice(0,3));
+let str5 = "Mohit";
+console.log(str5.slice(0, 3));
 
-console.log(str5.substring(0,3));
+console.log(str5.substring(0, 3));
 
 //replace() method
-let str6="Mohit kumar"
-console.log(str6.replace("Mohit","Rahul"));
+let str6 = "Mohit kumar"
+console.log(str6.replace("Mohit", "Rahul"));
 
 //split() method
-let str7="Mohit kumar"
+let str7 = "Mohit kumar"
 console.log(str7.split(" "));
 
 //trim() method
-let str8="   Mohit kumar   "
+let str8 = "   Mohit kumar   "
 console.log(str8.trim());
 
 //concat() method
-let str9="Mohit";
+let str9 = "Mohit";
 console.log(str9.concat(" Kumar"))
 
 

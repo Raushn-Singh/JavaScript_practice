@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    <script>
+      function doTask(name) {
+        console.log("Good Morining" + name + "Sir");
+      }
+      doTask("John");
+      doTask("Nageshwar");
+
+      let greet = (name) => {
+        console.log("Good Morning" + name + "Sir");
+      };
+      greet("John");
+    </script> 
+    -->
+
+    <script>
+      //Array :
+      let basket = ["Apple", "Mango", "Papaya", "Pomegranate", "etc"];
+      // for (let i = 0; i < basket.length; i++) {
+      // console.log(basket[i]);
+      // printFruits(basket[i]);
+      // }
+      //function printFruits(fruit) {
+      //console.log(fruit);
+      //}
+
+      // basket.forEach(printFruits);
+      /* basket.forEach((fruit) => console.log(fruit));
+
+      let filterfruit = basket.filter((fruit) => fruit.startsWith("P"));
+      console.log(filterfruit);
+
+      let res = basket.map((f) => f + "is Sweet");
+      console.log(res);
+
+      let result = basket.map((f) => {
+        let temp = f + "is very sweet in taste";
+        return temp;
+      }); */
+      //  console.log(result);
+      let employees = [
+        { id: 1, name: "John", salary: 5000, age: 25, gender: "M" },
+        { id: 2, name: "Emma", salary: 5200, age: 28, gender: "F" },
+        { id: 3, name: "Michael", salary: 5800, age: 30, gender: "M" },
+        { id: 4, name: "Sophia", salary: 5400, age: 26, gender: "F" },
+        { id: 5, name: "Daniel", salary: 6000, age: 35, gender: "M" },
+        { id: 6, name: "Olivia", salary: 6200, age: 32, gender: "F" },
+        { id: 7, name: "David", salary: 5100, age: 29, gender: "M" },
+        { id: 8, name: "Ava", salary: 5300, age: 27, gender: "F" },
+        { id: 9, name: "James", salary: 6100, age: 33, gender: "M" },
+        { id: 10, name: "Mia", salary: 5500, age: 31, gender: "F" },
+        { id: 11, name: "Chris", salary: 4950, age: 24, gender: "M" },
+        { id: 12, name: "Lily", salary: 5050, age: 23, gender: "F" },
+        { id: 13, name: "Ethan", salary: 5600, age: 36, gender: "M" },
+        { id: 14, name: "Chloe", salary: 5400, age: 34, gender: "F" },
+        { id: 15, name: "Liam", salary: 5800, age: 37, gender: "M" },
+        { id: 16, name: "Isabella", salary: 5900, age: 29, gender: "F" },
+        { id: 17, name: "Noah", salary: 6000, age: 38, gender: "M" },
+        { id: 18, name: "Grace", salary: 6100, age: 30, gender: "F" },
+        { id: 19, name: "Lucas", salary: 6200, age: 39, gender: "M" },
+        { id: 20, name: "Zoe", salary: 6300, age: 35, gender: "F" },
+      ];
+
+      let resul = employees.filter((f) => f.salary >= 800);
+      console.log(resul);
+
+      let resul2 = employees.map((f) => (f.salary *= 0.5));
+      console.log(resul2);
+      // console.log(employees);
+
+      let result1 = employees.map((emp) => {
+        emp.salary = emp.salary * 0.5;
+        return emp;
+      });
+      console.log(result1);
+
+      //remove employees whose  employee salary > 95000
+    </script>
+  </body>
+</html>

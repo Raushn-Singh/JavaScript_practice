@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- yaha par method se event ko bind kar rahe hai
+    <button onclick="greet()">Click Me</button>
+      -->
+
+    <button
+      onclick="greet()"
+      onmouseover="handleMouseIn()"
+      onmouseout="handleMouseOut(this)"
+    >
+      Click Me
+    </button>
+
+    <button id="btn1">Button</button>
+    <script>
+      // pointer event : click, double click ,scroll,mouseover,mouseout,rightclick,drag,drop
+      // keyboard event : keydown, keyup, keypress
+      //window(tab):resize,blur,focus etc
+      function greet() {
+        console.log("Hello, World!");
+      }
+
+      function handleMouseIn() {
+        let buttonobj = document.getElementsByTagName("button")[0];
+        buttonobj.style.background = "red";
+        console.log("Mouse is in the button");
+      }
+      function handleMouseOut(buttonobj) {
+        // let buttonobj = document.getElementsByTagName("button")[0];
+        buttonobj.style.background = "blue";
+      }
+
+      let btn1 = document.getElementById("btn1");
+      btn1.addEventListener("click", function () {
+        console.log("Button is clicked");
+      });
+
+      btn1.addEventListener("contextmenu", (event) => {
+        console.log(event);
+        event.preventDefault();
+        event.target.style.background = "yellow";
+      });
+    </script>
+  </body>
+</html>

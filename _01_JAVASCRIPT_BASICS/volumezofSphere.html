@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function calculateArea() {
+        const PI = 3.14;
+        var radius = document.getElementById("radius").value;
+        var area = (4 / 3) * PI * radius ** 3;
+        document.getElementById("result").innerHTML =
+          "the volume of sphere is : " + area;
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="result"></h1>
+    Enter radius : <input type="number" id="radius" value="5" />
+    <button onclick="calculateArea()">Calculate</button>
+  </body>
+</html>
